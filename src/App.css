@@ -1,0 +1,214 @@
+#root {
+	height: 100%;
+	width: 100%;
+}
+
+.navbar {
+	width: 100%;
+	position: fixed;
+	z-index: 4;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	flex-wrap: nowrap;
+	padding: .5em;
+	padding-left: 4em;
+	background: #150050;
+	align-items: center;
+
+	div {
+		display: flex;
+		align-items: center;
+		flex-direction: row;
+		flex-wrap: nowrap;
+	}
+
+	a,
+	img {
+		margin: .5em;
+		padding: .5em;
+		cursor: pointer;
+		border-radius: 8px;
+		text-align: center;
+	}
+
+	a {
+		min-width: 3em;
+		text-decoration: none;
+		color: white;
+	}
+
+	a:hover {
+		background: var(--background-second);
+	}
+
+	button {
+		border-radius: 8px;
+		border: 2px solid transparent;
+		color: white;
+		padding: 0.6em 1.2em;
+		font-size: 1.25em;
+		font-family: inherit;
+		background: #b186c6;
+		cursor: pointer;
+		margin-right: 4em;
+		background-color: var(--background-second);
+	}
+}
+
+.header {
+	height: 100%;
+	width: 100%;
+	display: flex;
+	flex-direction: row-reverse;
+	align-items: center;
+
+	.title {
+		transform: translateX(10em);
+	}
+
+	h1 {
+		font-size: 6em;
+		line-height: 1.1;
+	}
+
+	button {
+		border-radius: 8px;
+		color: white;
+		border: 2px solid transparent;
+		padding: 0.6em 1.2em;
+		font-size: 1.25em;
+		font-family: inherit;
+		background-color: var(--background-second);
+		cursor: pointer;
+		transition: all 0.25s;
+	}
+
+	button:hover {
+		box-shadow: 0 0 50px #80055f;
+	}
+}
+
+.info {
+	background-color: white;
+	color: black;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	flex-wrap: nowrap;
+	padding-bottom: 5em;
+
+	h2 {
+		font-family: "Rubik Mono One", monospace;
+		font-size: 7em;
+		margin: 0;
+		margin-top: 1em;
+		font-weight: 400;
+		font-style: normal;
+	}
+
+	div {
+		display: flex;
+		align-items: center;
+		flex-wrap: nowrap;
+		width: 80%;
+		justify-content: space-around;
+		margin: 1em;
+
+		p {
+			width: 50%;
+		}
+	}
+
+	div:nth-child(even) {
+		flex-direction: row;
+	}
+
+	div:nth-child(odd) {
+		flex-direction: row-reverse;
+	}
+}
+
+
+.avis {
+	background-color: var(--background-first);
+	color: white;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	flex-wrap: nowrap;
+
+	h2 {
+		font-family: "Rubik Mono One", monospace;
+		font-size: 7em;
+		margin: 0;
+		margin-top: 1em;
+		font-weight: 400;
+		font-style: normal;
+	}
+
+	.note {
+		display: flex;
+		/* flex-direction: row;
+        align-items: center;
+        flex-wrap: nowrap; */
+		width: 100%;
+		overflow: visible;
+
+		div {
+			transform: translateY(60px);
+			position: relative;
+			height: 15em;
+			width: 30em;
+			background: var(--background-second);
+			margin-left: 7em;
+			margin-right: 7em;
+			min-width: 30em;
+			border-radius: 10px;
+		}
+
+		p {
+			max-width: 10em;
+		}
+	}
+}
+
+.propos {
+	background-color: white;
+	color: black;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	flex-wrap: nowrap;
+	padding-top: 5em;
+
+	h2 {
+		font-family: "Rubik Mono One", monospace;
+		font-size: 7em;
+		margin: 0;
+		margin-top: 1em;
+		font-weight: 400;
+		font-style: normal;
+	}
+
+	div {
+		display: flex;
+		align-items: center;
+		flex-wrap: nowrap;
+		width: 80%;
+		justify-content: space-around;
+		margin: 1em;
+
+		p {
+			width: 50%;
+		}
+	}
+
+	div:nth-child(even) {
+		flex-direction: row;
+	}
+
+	div:nth-child(odd) {
+		flex-direction: row-reverse;
+	}
+}

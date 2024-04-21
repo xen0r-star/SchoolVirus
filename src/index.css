@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Rubik+Mono+One&display=swap');
+
+:root {
+	font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+	line-height: 1.5;
+	font-weight: 400;
+
+	color: rgba(255, 255, 255, 0.87);
+	background-color: #3F0071;
+	--background-first: #3F0071;
+	--background-second: #FB2576;
+
+	--color-second: #FB2576;
+
+	font-synthesis: none;
+	text-rendering: optimizeLegibility;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+
+	overflow-x: hidden;
+	overflow-y: scroll;
+	-ms-overflow-style: none;
+	scrollbar-width: none;
+}
+
+:root::-webkit-scrollbar {
+	display: none;
+}
+
+body {
+	margin: 0;
+	display: flex;
+	place-items: center;
+	min-width: 320px;
+	min-height: 100vh;
+}
+
+.absolute {
+	position: absolute;
+}
+
+.index-first {
+	z-index: 3;
+}
+
+.index-second {
+	z-index: 2;
+}
+
+.image {
+	height: 100vh;
+}
+
+.gradient {
+	background: linear-gradient(89deg, #000000 20%, #000000 25%, #ffffff00 38%);
+	height: 100%;
+	width: 100%;
+}
